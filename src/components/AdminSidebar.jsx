@@ -27,7 +27,7 @@ const AdminSidebar = ({ isOpen, closeSidebar }) => {
     <aside className={`fixed lg:static inset-y-0 left-0 z-30 w-[280px] bg-primary-deep text-white flex flex-col transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
       <div className="flex items-center justify-between p-8 border-b border-white/10">
         <div className="flex items-center justify-center w-full">
-          <img src={logo} alt="Arlenvia Logo" className="h-16 w-auto object-contain" />
+          <img src={logo} alt="Arlenvia Logo" className="h-12 md:h-16 w-auto object-contain" />
         </div>
         <button className="lg:hidden text-white/70 hover:text-white p-2" onClick={closeSidebar} aria-label="Close sidebar">
           <FiX className="text-2xl" />
