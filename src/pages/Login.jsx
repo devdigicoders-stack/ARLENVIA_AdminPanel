@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiMail, FiLock, FiEye, FiEyeOff } from 'react-icons/fi';
 import { AuthContext } from '../context/AuthContext';
+import logo from '../assets/logo/logo.png';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -71,10 +72,7 @@ const Login = () => {
         
         <div className="relative z-10 max-w-lg">
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold tracking-widest text-white mb-2">ARLENVIA</h1>
-            <div className="text-[13px] font-heading uppercase tracking-[0.3em] text-[var(--color-gold-primary)]">
-              Training Consultancy Services
-            </div>
+            <img src={logo} alt="Arlenvia Logo" className="h-20 md:h-24 w-auto object-contain" />
           </div>
           <div className="w-12 h-[2px] bg-[var(--color-gold-primary)] mb-8" />
           <h2 className="text-3xl font-heading font-light leading-snug mb-6 text-white/90">
